@@ -1,0 +1,3 @@
+D:/Code/git/c-algorithms/Backtracking/combinations/cmake-build-debug/CMakeFiles/combinations.dir
+D:/Code/git/c-algorithms/Backtracking/combinations/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Code/git/c-algorithms/Backtracking/combinations/cmake-build-debug/CMakeFiles/rebuild_cache.dir
