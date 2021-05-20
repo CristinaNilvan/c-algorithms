@@ -57,6 +57,19 @@ void ShowSelectedActivities(Activity * Activities, int * SelectedActivities, int
 
 int main()
 {
+    int NumberOfActivities;
+    NumberOfActivities = GetNumberOfActivities(&NumberOfActivities);
+
+    Activity Activities[NumberOfActivities];
+    GetActivities(NumberOfActivities, Activities);
+
+    SortActivities(Activities, NumberOfActivities);
+
+    int SelectedActivities[NumberOfActivities];
+    int NumberOfSelectedActivities;
+    SelectActivities(Activities, NumberOfActivities, SelectedActivities, &NumberOfSelectedActivities);
+
+    ShowSelectedActivities(Activities, SelectedActivities, NumberOfSelectedActivities);
 
     return 0;
 }
