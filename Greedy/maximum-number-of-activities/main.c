@@ -23,16 +23,19 @@ void GetActivities(int NumberOfActivities, Activity *Activities)
     }
 }
 
+void SwapActivities(Activity * FirstActivity, Activity * SecondActivity)
+{
+    Activity Auxiliary = *FirstActivity;
+    *FirstActivity = *SecondActivity;
+    *SecondActivity = Auxiliary;
+}
+
 void SortActivities(Activity * Activities, int NumberOfActivities)
 {
     for (int i = 0; i < NumberOfActivities; ++i)
         for (int j = i + 1; j < NumberOfActivities; ++j)
             if (Activities[i].StartTime > Activities[j].StartTime)
-            {
-                Activity Auxiliary = Activities[i];
-                Activities[i] = Activities[j];
-                Activities[j] = Auxiliary;
-            }
+                SwapActivities(&Activities[i], &Activities[j]);
 }
 
 void SelectActivities(Activity * Activities, int NumberOfActivities, int * SelectedActivities, int * NumberOfSelectedActivities)
