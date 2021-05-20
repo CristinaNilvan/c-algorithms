@@ -35,6 +35,19 @@ void SortActivities(Activity * Activities, int NumberOfActivities)
             }
 }
 
+void SelectActivities(Activity * Activities, int NumberOfActivities, int * SelectedActivities, int * NumberOfSelectedActivities)
+{
+    SelectedActivities[0] = 0;
+    *NumberOfSelectedActivities = 1;
+
+    for (int i = 1; i < NumberOfActivities; ++i)
+        if (Activities[i].StartTime >= Activities[SelectedActivities[*NumberOfSelectedActivities - 1]].EndTime)
+        {
+            SelectedActivities[*NumberOfSelectedActivities] = i;
+            *NumberOfSelectedActivities += 1;
+        }
+}
+
 void ShowSelectedActivities(Activity * Activities, int * SelectedActivities, int NumberOfSelectedActivities)
 {
     for (int i = 0; i < NumberOfSelectedActivities; ++i)
