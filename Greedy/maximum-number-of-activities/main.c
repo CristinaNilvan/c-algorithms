@@ -6,12 +6,14 @@ typedef struct
     char ActivityName[100];
 } Activity;
 
-int GetNumberOfActivities(int *NumberOfActivities)
+int GetNumberOfActivities()
 {
-    printf("Number of activities : ");
-    scanf("%d", NumberOfActivities);
+    int NumberOfActivities = 0;
 
-    return (*NumberOfActivities);
+    printf("Number of activities : ");
+    scanf("%d", &NumberOfActivities);
+
+    return NumberOfActivities;
 }
 
 void GetActivities(int NumberOfActivities, Activity *Activities)
@@ -61,7 +63,7 @@ void ShowSelectedActivities(Activity * Activities, int * SelectedActivities, int
 int main()
 {
     int NumberOfActivities;
-    NumberOfActivities = GetNumberOfActivities(&NumberOfActivities);
+    NumberOfActivities = GetNumberOfActivities();
 
     Activity Activities[NumberOfActivities];
     GetActivities(NumberOfActivities, Activities);
