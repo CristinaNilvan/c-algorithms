@@ -121,6 +121,21 @@ void EstablishesTotalBackpackValue(Object * obiecte, int numarObiecte, int capac
 
 int main()
 {
-    
+    FILE * File = ValidateFile("Objects.txt");
+
+    int NumberOfObjects = GetNumberOfObjects(File);
+    Object * Objects = GetObjects(File, NumberOfObjects);
+
+    fclose(File);
+
+    DisplayAvailableObjects(Objects, NumberOfObjects);
+
+    SortObjects(Objects, NumberOfObjects);
+
+    int BackpackCapacity = GetBackpackCapacity();
+    EstablishesTotalBackpackValue(Objects, NumberOfObjects, BackpackCapacity);
+
+    free(Objects);
+
     return 0;
 }
