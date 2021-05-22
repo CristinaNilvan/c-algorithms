@@ -81,6 +81,16 @@ void ShowObjects(Object * Objects, int NumberOfObjects)
         printf("%d %d %s\n", Objects[i].Weight, Objects[i].Value, Objects[i].ObjectName);
 }
 
+int GetBackpackCapacity()
+{
+    int BackpackCapacity;
+    printf("Backpack capacity : ");
+
+    scanf("%d", &BackpackCapacity);
+
+    return BackpackCapacity;
+}
+
 int main()
 {
     printf("Hello, World!\n");
