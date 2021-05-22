@@ -91,8 +91,36 @@ int GetBackpackCapacity()
     return BackpackCapacity;
 }
 
+int GetValueOfBackpackObjects(Object * Objects, int NumberOfObjects, int BackpackCapacity)
+{
+    int CurrentWeight = 0;
+    int TotalValue = 0;
+
+    for (int i = 0; i < NumberOfObjects; ++i)
+        if (CurrentWeight + Objects[i].Weight <= BackpackCapacity)
+        {
+            CurrentWeight += Objects[i].Weight;
+            TotalValue += Objects[i].Value;
+        }
+
+    return TotalValue;
+}
+
+void DisplayAvailableObjects(Object * Objects, int NumberOfObjects)
+{
+    printf("Available objects : \n");
+    ShowObjects(Objects, NumberOfObjects);
+    printf("\n");
+}
+
+void EstablishesTotalBackpackValue(Object * obiecte, int numarObiecte, int capacitateRucsac)
+{
+    int TotalValue = GetValueOfBackpackObjects(obiecte, numarObiecte, capacitateRucsac);
+    printf("The value of the objects in the backpack is : %d.", TotalValue);
+}
+
 int main()
 {
-    printf("Hello, World!\n");
+    
     return 0;
 }
