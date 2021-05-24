@@ -31,7 +31,7 @@ void SwapElements(int * FirstElement, int * SecondElement)
     *SecondElement = Auxiliary;
 }
 
-int FindPositionOfMinimum(const int *Array, int NumberOfElements, int i)
+int FindPositionOfMinimum(int * Array, int NumberOfElements, int i)
 {
     int PositionOfMin = i;
 
