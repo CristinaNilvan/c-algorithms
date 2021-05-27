@@ -47,7 +47,7 @@ bool BinarySearch(int * Array, int Left, int Right, int SearchedNumber)
 
 void TestsBinarySearch(int NumberOfElements, int * Array, int SearchedNumber)
 {
-    bool Found = BinarySearch(Array, 0, NumberOfElements, SearchedNumber);
+    bool Found = BinarySearch(Array, 0, NumberOfElements - 1, SearchedNumber);
 
     if (Found)
         printf("The number %d has been found. ", SearchedNumber);

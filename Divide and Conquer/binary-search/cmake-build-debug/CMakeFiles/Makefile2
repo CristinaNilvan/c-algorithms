@@ -63,10 +63,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\crist\OneDrive\Desktop\Github\binary-search
+CMAKE_SOURCE_DIR = "D:\Code\git\c-algorithms\Divide and Conquer\binary-search"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\crist\OneDrive\Desktop\Github\binary-search\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\Code\git\c-algorithms\Divide and Conquer\binary-search\cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/binary_search.dir/clean
 CMakeFiles/binary_search.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_search.dir\build.make CMakeFiles/binary_search.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_search.dir\build.make CMakeFiles/binary_search.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\crist\OneDrive\Desktop\Github\binary-search\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target binary_search"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Code\git\c-algorithms\Divide and Conquer\binary-search\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target binary_search"
 .PHONY : CMakeFiles/binary_search.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/binary_search.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Github\binary-search\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Code\git\c-algorithms\Divide and Conquer\binary-search\cmake-build-debug\CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/binary_search.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Github\binary-search\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Code\git\c-algorithms\Divide and Conquer\binary-search\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/binary_search.dir/rule
 
 # Convenience name for target.
