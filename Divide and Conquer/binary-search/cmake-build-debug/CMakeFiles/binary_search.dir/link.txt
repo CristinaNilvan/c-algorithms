@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\binary_search.dir/objects.a
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\binary_search.dir/objects.a @CMakeFiles\binary_search.dir\objects1.rsp
+C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\binary_search.dir/objects.a -Wl,--no-whole-archive  -o binary_search.exe -Wl,--out-implib,libbinary_search.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\binary_search.dir\linklibs.rsp
