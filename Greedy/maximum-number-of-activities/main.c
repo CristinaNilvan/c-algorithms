@@ -36,7 +36,7 @@ void SortActivities(Activity * Activities, int NumberOfActivities)
 {
     for (int i = 0; i < NumberOfActivities; ++i)
         for (int j = i + 1; j < NumberOfActivities; ++j)
-            if (Activities[i].StartTime > Activities[j].StartTime)
+            if (Activities[i].EndTime > Activities[j].EndTime)
                 SwapActivities(&Activities[i], &Activities[j]);
 }
 
