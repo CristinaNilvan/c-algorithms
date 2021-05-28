@@ -62,6 +62,11 @@ void ShowSelectedActivities(Activity * Activities, int * SelectedActivities, int
                Activities[SelectedActivities[i]].EndTime, Activities[SelectedActivities[i]].ActivityName);
 }
 
+void ShowTheNumberOfActivities(int NumberOfSelectedActivities)
+{
+    printf("\nThe maximum number of selected activities is : %d. ", NumberOfSelectedActivities);
+}
+
 int main()
 {
     int NumberOfActivities;
@@ -77,6 +82,7 @@ int main()
     SelectActivities(Activities, NumberOfActivities, SelectedActivities, &NumberOfSelectedActivities);
 
     ShowSelectedActivities(Activities, SelectedActivities, NumberOfSelectedActivities);
+    ShowTheNumberOfActivities(NumberOfSelectedActivities);
 
     return 0;
 }
