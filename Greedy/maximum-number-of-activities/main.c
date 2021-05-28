@@ -55,8 +55,10 @@ void SelectActivities(Activity * Activities, int NumberOfActivities, int * Selec
 
 void ShowSelectedActivities(Activity * Activities, int * SelectedActivities, int NumberOfSelectedActivities)
 {
+    printf("\nThe selected activities are : \n");
+
     for (int i = 0; i < NumberOfSelectedActivities; ++i)
-        printf("%d %d %d %s\n", SelectedActivities[i], Activities[SelectedActivities[i]].StartTime,
+        printf("\n%d %d %d %s\n", SelectedActivities[i], Activities[SelectedActivities[i]].StartTime,
                Activities[SelectedActivities[i]].EndTime, Activities[SelectedActivities[i]].ActivityName);
 }
 
