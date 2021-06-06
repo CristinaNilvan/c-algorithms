@@ -1,0 +1,3 @@
+D:/Code/git/c-algorithms/Greedy/backpack-problem-with-tree-nodes/cmake-build-debug/CMakeFiles/backpack_problem_with_tree_nodes.dir
+D:/Code/git/c-algorithms/Greedy/backpack-problem-with-tree-nodes/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Code/git/c-algorithms/Greedy/backpack-problem-with-tree-nodes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
