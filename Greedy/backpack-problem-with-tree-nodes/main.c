@@ -169,5 +169,7 @@ int main()
     int BackpackCapacity = GetBackpackCapacity();
     EstablishesTotalBackpackValue(VectorOfNodes, NumberOfNodes, BackpackCapacity);
 
+    free(VectorOfNodes);
+
     return 0;
 }
