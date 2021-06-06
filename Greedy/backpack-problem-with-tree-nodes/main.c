@@ -153,5 +153,21 @@ void EstablishesTotalBackpackValue(NodeCharacteristics * VectorOfNodes, int Numb
 
 int main()
 {
+    FILE * File = ValidateFile("Tree.txt");
+
+    Node * Root = CreateBinaryTreeFromFile(File);
+
+    fclose(File);
+
+    int NumberOfNodes = 0;
+    NodeCharacteristics * VectorOfNodes = (NodeCharacteristics *)malloc(MAX_NUMBER_OF_NODES * sizeof(NodeCharacteristics));
+
+    InOrderCrossing(Root, VectorOfNodes, &NumberOfNodes);
+
+    SortNodes(VectorOfNodes, NumberOfNodes);
+
+    int BackpackCapacity = GetBackpackCapacity();
+    EstablishesTotalBackpackValue(VectorOfNodes, NumberOfNodes, BackpackCapacity);
+
     return 0;
 }
