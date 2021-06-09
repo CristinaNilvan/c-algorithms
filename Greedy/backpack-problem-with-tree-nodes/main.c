@@ -98,7 +98,7 @@ bool Condition(NodeCharacteristics FirstNode, NodeCharacteristics SecondNode)
     return false;
 }
 
-void SwapObjects(NodeCharacteristics * FirstNode, NodeCharacteristics * SecondNode)
+void SwapNodes(NodeCharacteristics * FirstNode, NodeCharacteristics * SecondNode)
 {
     NodeCharacteristics Auxiliary = *FirstNode;
     *FirstNode = *SecondNode;
@@ -110,7 +110,7 @@ void SortNodes(NodeCharacteristics * VectorOfNodes, int NumberOfNodes)
     for (int i = 0; i < NumberOfNodes; ++i)
         for (int j = i + 1; j < NumberOfNodes; ++j)
             if (Condition(VectorOfNodes[i], VectorOfNodes[j]))
-                SwapObjects(&VectorOfNodes[i], &VectorOfNodes[j]);
+                SwapNodes(&VectorOfNodes[i], &VectorOfNodes[j]);
 }
 
 int GetBackpackCapacity()
