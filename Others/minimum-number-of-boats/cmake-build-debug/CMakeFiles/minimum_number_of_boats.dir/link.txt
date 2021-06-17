@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\minimum_number_of_boats.dir/objects.a
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\minimum_number_of_boats.dir/objects.a @CMakeFiles\minimum_number_of_boats.dir\objects1.rsp
+C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\minimum_number_of_boats.dir/objects.a -Wl,--no-whole-archive  -o minimum_number_of_boats.exe -Wl,--out-implib,libminimum_number_of_boats.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\minimum_number_of_boats.dir\linklibs.rsp

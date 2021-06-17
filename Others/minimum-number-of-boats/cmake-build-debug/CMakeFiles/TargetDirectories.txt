@@ -1,0 +1,3 @@
+C:/Users/crist/OneDrive/Desktop/Github/minimum-number-of-boats/cmake-build-debug/CMakeFiles/minimum_number_of_boats.dir
+C:/Users/crist/OneDrive/Desktop/Github/minimum-number-of-boats/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/crist/OneDrive/Desktop/Github/minimum-number-of-boats/cmake-build-debug/CMakeFiles/rebuild_cache.dir
