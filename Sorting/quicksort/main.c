@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int GetNumberOfElements()
-{
+int GetNumberOfElements() {
     int NumberOfElements;
 
     printf("Number of elements = ");
@@ -10,22 +9,19 @@ int GetNumberOfElements()
     return NumberOfElements;
 }
 
-void ReadElements(int * Array, int NumberOfElements)
-{
+void ReadElements(int * Array, int NumberOfElements) {
     for (int i = 1; i <= NumberOfElements; ++i)
         scanf("%d", &Array[i]);
 }
 
-void ShowAllElements(int * Array, int NumberOfElements)
-{
+void ShowAllElements(int * Array, int NumberOfElements) {
     for (int i = 1; i <= NumberOfElements; ++i)
         printf("%d ", Array[i]);
 
     printf("\n");
 }
 
-void SwapElements(int * FirstElement, int * SecondElement)
-{
+void SwapElements(int * FirstElement, int * SecondElement) {
     int Auxiliary = *FirstElement;
     *FirstElement = *SecondElement;
     *SecondElement = Auxiliary;
